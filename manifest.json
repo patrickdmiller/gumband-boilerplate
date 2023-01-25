@@ -1,0 +1,14 @@
+{
+  "manifest": {
+    "statuses": [
+      {
+        "id": "test_status",
+        "type": "String",
+        "display": "Test Status",
+        "order": 0
+      }
+    ],
+    "controls": [],
+    "settings": []
+  }
+}
