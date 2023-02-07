@@ -4,11 +4,153 @@
       {
         "id": "test_status",
         "type": "String",
-        "display": "Test Status",
-        "order": 0
+        "display": "Test Status 1",
+        "order": 1
       }
     ],
-    "controls": [],
-    "settings": []
+    "controls": [
+      {
+        "id": "reload",
+        "type": "Single",
+        "display": "Reload2",
+        "order": 2
+      },
+      {
+        "id": "skip",
+        "type": "Single",
+        "display": "Skip Interaction0",
+        "enabledOpMode": "On",
+        "order": 0
+      },
+      {
+        "id": "restart_cameras",
+        "type": "Group",
+        "display": "Restart Cameras 1",
+        "order": 1,
+        "items": [
+          {
+            "id": "camera_1",
+            "display": "Camera 1"
+          },
+          {
+            "id": "camera_2",
+            "display": "Camera 2"
+          }
+        ]
+      },
+      {
+        "id": "restart_cameras2",
+        "type": "Group",
+        "display": "Restart Cameras0",
+        "order": 0,
+        "items": [
+          {
+            "id": "camera_1",
+            "display": "Camera 1"
+          },
+          {
+            "id": "camera_2",
+            "display": "Camera 2"
+          }
+        ]
+      }
+     
+    ],
+    "settings": [
+      {
+        "id": "kiosk_name",
+        "type": "TextInput",
+        "display": "Kiosk Name 4",
+        "default": "(not set)",
+        "order": 4
+      },
+      {
+        "id": "idle_timeout_secs",
+        "type": "IntegerInput",
+        "display": "Idle Timeout (secs) 6",
+        "default": 60,
+        "order": 6
+      },
+      {
+        "id": "prod_api",
+        "type": "Toggle",
+        "display": "Production API",
+        "default": false
+      },
+      {
+        "id": "audio_file",
+        "type": "Dropdown",
+        "display": "Audio File 3",
+        "value": "a_type_1",
+        "default": "a_type_1",
+        "order": 3,
+        "items": [
+          {
+            "id": "a_type_1",
+            "display": "Audio 1"
+          },
+          {
+            "id": "a_type_2",
+            "display": "Audio 2"
+          },
+          {
+            "id": "a_type_3",
+            "display": "Audio 3"
+          }
+        ]
+      },
+      {
+        "id": "ux_mode",
+        "type": "SingleButtonGroup",
+        "display": "UX Mode 2",
+        "default": "ux_mode_ambient",
+        "order": 2,
+        "items": [
+          {
+            "id": "ux_mode_silent",
+            "display": "Silent"
+          },
+          {
+            "id": "ux_mode_ambient",
+            "display": "Ambient"
+          },
+          {
+            "id": "ux_mode_offline",
+            "display": "Offline"
+          }
+        ]
+      },
+      {
+        "id": "date",
+        "type": "Date",
+        "display": "Date 0",
+        "order": 0
+      },
+      {
+        "id": "named_images",
+        "order": 1,
+        "type": "SettingsList",
+        "display": "Named Images 1",
+        "schema": [
+          {
+            "type": "TextInput",
+            "id": "image_group_title",
+            "display": "Image Group Title"
+          },
+          {
+            "type": "SettingsList",
+            "id": "images_list",
+            "display": "Images",
+            "schema": [
+              {
+                "type": "FileSelection",
+                "id": "image_file",
+                "display": "Image"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
